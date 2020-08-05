@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+			height: 100vh;
+		}
+		.main-block {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		.header-footer {
+			background: cadetblue;
+			width: 100vw;
+			height: 50px;
+			display: flex;
+			align-items: center;
+  			justify-content: center;
+			color: white;
+		}
+		.inner-block {
+			display: flex;
+			flex-direction: row;
+			width: 100vw;
+			flex-grow: 1;
+		}
+		.list-block {
+			background: darkgrey;
+			overflow-y: auto;
+			display: block;
+			height: calc(100vh - 100px); 
+			flex-grow:0;
+    		flex-shrink:0;
+		}
+		.picture-block {
+			background: darkgrey;
+			height: calc(100vh - 100px);
+			overflow-y: auto;
+			overflow-x: hidden;
+			flex-grow: 0;
+		}
+		ul {
+			padding-right: 10px;
+		}
+	</style>
+	<body>
+		<div class = "main-block">
+			<div class = "header-footer">
+				<div>HEADER TEXT</div>
+			</div>
+			<div class = "inner-block">
+				<div class = "list-block">
+					<ul>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+						<li>Coffee</li>
+						<li>Tea</li>
+						<li>Milk</li>
+					 </ul>
+				</div>
+				<div class = "picture-block">
+					<img src = "https://i.pinimg.com/originals/4d/6c/cd/4d6ccd495d729df2b9ed28bac8e6ded0.jpg" />
+				</div>
+			</div>
+			<div class = "header-footer">
+				<div>FOOTER TEXT</div>
+			</div>			
+		</div>
+	</body>
+</html>
